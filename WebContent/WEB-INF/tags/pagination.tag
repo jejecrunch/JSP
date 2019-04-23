@@ -21,7 +21,7 @@ int pageSize = (Integer)jspContext.getAttribute("pageSize");
 String name = (String)jspContext.getAttribute("queryStringName");
 
 int currentPage = 1;
-if (request.getParameter(name) != null)
+if (request.getParameter(name)!=null)
     currentPage = Integer.parseInt(request.getParameter(name));
 
 int pageCount = recordCount / pageSize;
