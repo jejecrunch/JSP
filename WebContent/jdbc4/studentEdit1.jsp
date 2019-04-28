@@ -14,6 +14,7 @@ if (request.getMethod().equals("GET")) {
 }
 else {
     student = new Student();
+    student.setId(id);
     student.setStudentNumber(request.getParameter("studentNumber"));
     student.setName(request.getParameter("studentName"));
     String s2 = request.getParameter("departmentId");
